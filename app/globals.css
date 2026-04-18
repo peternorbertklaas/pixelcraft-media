@@ -1,0 +1,409 @@
+@import "tailwindcss";
+
+/* ============================================================
+   LOCAL FONTS
+   ============================================================ */
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CormorantGaramond-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CormorantGaramond-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CormorantGaramond-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CormorantGaramond-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DMSans';
+  src: url('/fonts/DMSans-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --font-cormorant: 'CormorantGaramond';
+  --font-dm-sans: 'DMSans';
+  --bg-base: #09090f;
+  --bg-surface: #0f0f18;
+  --bg-elevated: #161622;
+  --bg-void: #050508;
+  --text-primary: #f4efe6;
+  --text-secondary: #8a8799;
+  --text-muted: #4a4858;
+  --orange-500: #ff4d00;
+  --orange-400: #ff6b24;
+  --orange-300: #ff8a4f;
+  --orange-glow: rgba(255, 77, 0, 0.18);
+  --orange-subtle: rgba(255, 77, 0, 0.06);
+  --indigo-500: #5b4bff;
+  --indigo-glow: rgba(91, 75, 255, 0.12);
+  --border-subtle: rgba(244, 239, 230, 0.06);
+  --border-visible: rgba(244, 239, 230, 0.12);
+
+  /* Gradients */
+  --gradient-hero: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,77,0,0.12) 0%, transparent 70%);
+  --gradient-cta: radial-gradient(ellipse 100% 80% at 50% 100%, rgba(91,75,255,0.15) 0%, transparent 60%);
+  --gradient-aurora: linear-gradient(135deg, rgba(255,77,0,0.08) 0%, rgba(91,75,255,0.06) 50%, rgba(255,77,0,0.04) 100%);
+
+  /* Typography scale */
+  --text-display: clamp(5rem, 12vw, 16rem);
+  --text-h2: clamp(2.8rem, 5.5vw, 7rem);
+  --text-h3: clamp(1.8rem, 2.8vw, 3rem);
+  --text-body: clamp(1rem, 1.1vw, 1.125rem);
+  --text-label: 0.75rem;
+}
+
+/* ============================================================
+   BASE RESET
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: auto; /* Lenis handles scroll */
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   FONT UTILITIES
+   ============================================================ */
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* ============================================================
+   CURSOR — hide default; CustomCursor handles rendering
+   ============================================================ */
+* {
+  cursor: none;
+}
+
+a,
+button {
+  cursor: none;
+}
+
+/* ============================================================
+   SELECTION
+   ============================================================ */
+::selection {
+  background: var(--orange-500);
+  color: #050508;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-muted) var(--bg-base);
+}
+
+/* ============================================================
+   GRAIN OVERLAY
+   ============================================================ */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.028;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+/* ============================================================
+   DOT GRID
+   ============================================================ */
+.dot-grid {
+  background-image: radial-gradient(
+    circle,
+    rgba(244, 239, 230, 0.04) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+.marquee-track {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+}
+
+.marquee-content {
+  display: inline-flex;
+  flex-shrink: 0;
+  animation: marquee var(--marquee-duration, 30s) linear infinite;
+  will-change: transform;
+}
+
+.marquee-content[data-direction="right"] {
+  animation-direction: reverse;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ============================================================
+   AMBIENT ORBS — iridescent background glow (fixed, pointer-events none)
+   ============================================================ */
+.orb-orange {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,77,0,0.06) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  animation: orbDrift 20s ease-in-out infinite alternate;
+}
+
+.orb-indigo {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(91,75,255,0.05) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  animation: orbDrift2 25s ease-in-out infinite alternate;
+}
+
+@keyframes orbDrift {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(60px, 40px); }
+}
+
+@keyframes orbDrift2 {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-50px, -30px); }
+}
+
+/* ============================================================
+   HERO GRADIENT
+   ============================================================ */
+.hero-gradient {
+  background: var(--gradient-hero);
+}
+
+/* ============================================================
+   FOCUS STYLES — keyboard accessibility
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--orange-500);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   MOBILE — Prevent horizontal overflow & iOS input zoom
+   ============================================================ */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent iOS auto-zoom on input focus (requires font-size ≥ 16px) */
+@media (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: max(1rem, 16px) !important;
+  }
+}
+
+/* Ensure touch targets are comfortable */
+@media (max-width: 720px) {
+  .nav-hamburger {
+    display: flex !important;
+    min-height: 44px;
+    min-width: 44px;
+  }
+  .nav-links,
+  .nav-cta {
+    display: none !important;
+  }
+
+  /* Hero CTA buttons stack vertically on small screens */
+  .hero-cta-buttons {
+    flex-direction: column;
+  }
+  .hero-cta-buttons > a {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Hero: collapse to single column and hide stats (shown in Stats section below) */
+  :root {
+    --hero-cols: 1fr;
+  }
+  .hero-stats-col {
+    display: none;
+  }
+}
+
+/* Hide stat dividers on mobile (they're for desktop horizontal layout only) */
+@media (max-width: 640px) {
+  .stat-divider {
+    display: none;
+  }
+}
+
+/* Work section: 3×2 grid on desktop, 2-col on tablet, 1-col on mobile */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+@media (max-width: 900px) {
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 520px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Services section: 3-col desktop, 2-col tablet, 1-col mobile */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+}
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 520px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .orb-orange,
+  .orb-indigo {
+    animation: none !important;
+  }
+
+  .marquee-content {
+    animation-play-state: paused !important;
+  }
+}
