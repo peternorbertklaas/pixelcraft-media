@@ -103,7 +103,7 @@ export default function About() {
             }}
           >
             <Image
-              src="/pictures/team/01_team-studio.png"
+              src="/pictures/team/01_team-studio.avif"
               alt="PixelCraft Media Team im Studio"
               fill
               sizes="(max-width: 768px) 100%, 50vw"

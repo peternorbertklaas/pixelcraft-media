@@ -270,7 +270,7 @@ export default function Showreel() {
             }}
           >
             <Image
-              src="/pictures/mockups/05_craftsman-tools-mockup.png"
+              src="/pictures/mockups/05_craftsman-tools-mockup.avif"
               alt="PixelCraft Media — Handwerk bis ins Detail"
               fill
               sizes="(max-width: 900px) 100%, 50vw"
