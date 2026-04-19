@@ -301,7 +301,7 @@ export default function ShopifyWoocommerceCustomPage() {
             }}
           >
             <Image
-              src="/pictures/blog/05_blog-casestudy-380percent.png"
+              src="/pictures/blog/05_blog-casestudy-380percent.avif"
               alt="Shopify vs WooCommerce vs Custom Development — Plattform-Vergleich"
               fill
               sizes="(max-width: 768px) 100%, 1400px"

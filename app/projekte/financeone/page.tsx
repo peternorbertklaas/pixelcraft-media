@@ -116,7 +116,7 @@ const ADJACENT = [
     metric: '+380%',
     metricLabel: 'organischer Traffic',
     tags: ['E-Commerce', 'Webdesign'],
-    image: '/pictures/mockups/01_luxecommerce-mockup.png',
+    image: '/pictures/mockups/01_luxecommerce-mockup.avif',
   },
   {
     slug: 'medtech-solutions',
@@ -124,7 +124,7 @@ const ADJACENT = [
     metric: '0.8% → 3.4%',
     metricLabel: 'Conversion Rate',
     tags: ['SaaS', 'UX/UI Design'],
-    image: '/pictures/mockups/02_medtech-mockup.png',
+    image: '/pictures/mockups/02_medtech-mockup.avif',
   },
 ]
 
@@ -295,7 +295,7 @@ export default function FinanceOnePage() {
           }}
         >
           <img
-            src="/pictures/mockups/04_financeone-mockup.png"
+            src="/pictures/mockups/04_financeone-mockup.avif"
             alt="FinanceOne Website Mockup"
             style={{
               width: '100%',

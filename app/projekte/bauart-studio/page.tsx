@@ -260,7 +260,7 @@ export default function BauartStudioPage() {
           }}
         >
           <img
-            src="/pictures/mockups/06_bauart-mockup.png"
+            src="/pictures/mockups/06_bauart-mockup.avif"
             alt="Bauart Studio Website Mockup"
             style={{
               width: '100%',

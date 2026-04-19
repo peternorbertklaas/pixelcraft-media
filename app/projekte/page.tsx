@@ -33,7 +33,7 @@ const PROJECTS: Project[] = [
     metric: '+380%',
     metricLabel: 'organischer Traffic',
     year: '2026',
-    image: '/pictures/mockups/01_luxecommerce-mockup.png',
+    image: '/pictures/mockups/01_luxecommerce-mockup.avif',
   },
   {
     slug: 'medtech-solutions',
@@ -43,7 +43,7 @@ const PROJECTS: Project[] = [
     metric: '0.8% → 3.4%',
     metricLabel: 'Conversion Rate',
     year: '2026',
-    image: '/pictures/mockups/02_medtech-mockup.png',
+    image: '/pictures/mockups/02_medtech-mockup.avif',
   },
   {
     slug: 'gastro-group',
@@ -53,7 +53,7 @@ const PROJECTS: Project[] = [
     metric: '+240%',
     metricLabel: 'Online-Reservierungen',
     year: '2026',
-    image: '/pictures/mockups/03_gastrogroup-mockup.png',
+    image: '/pictures/mockups/03_gastrogroup-mockup.avif',
   },
   {
     slug: 'financeone',
@@ -63,7 +63,7 @@ const PROJECTS: Project[] = [
     metric: '7.8s → 1.1s',
     metricLabel: 'Ladezeit',
     year: '2026',
-    image: '/pictures/mockups/04_financeone-mockup.png',
+    image: '/pictures/mockups/04_financeone-mockup.avif',
   },
   {
     slug: 'vitalis-klinik',
@@ -73,7 +73,7 @@ const PROJECTS: Project[] = [
     metric: '+280%',
     metricLabel: 'Terminbuchungen',
     year: '2026',
-    image: '/pictures/mockups/05_vitalis-mockup.png',
+    image: '/pictures/mockups/05_vitalis-mockup.avif',
   },
   {
     slug: 'bauart-studio',
@@ -83,7 +83,7 @@ const PROJECTS: Project[] = [
     metric: '+340%',
     metricLabel: 'Projektanfragen',
     year: '2026',
-    image: '/pictures/mockups/06_bauart-mockup.png',
+    image: '/pictures/mockups/06_bauart-mockup.avif',
   },
 ]
 

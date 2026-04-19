@@ -318,7 +318,7 @@ export default function ConversionRatePage() {
             }}
           >
             <Image
-              src="/pictures/blog/03_blog-conversion-funnel.png"
+              src="/pictures/blog/03_blog-conversion-funnel.avif"
               alt="Conversion Rate Optimierung — Funnel Visualisierung"
               fill
               sizes="(max-width: 768px) 100%, 1400px"

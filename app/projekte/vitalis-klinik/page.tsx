@@ -260,7 +260,7 @@ export default function VitalisKlinikPage() {
           }}
         >
           <img
-            src="/pictures/mockups/05_vitalis-mockup.png"
+            src="/pictures/mockups/05_vitalis-mockup.avif"
             alt="Vitalis Klinik Website Mockup"
             style={{
               width: '100%',

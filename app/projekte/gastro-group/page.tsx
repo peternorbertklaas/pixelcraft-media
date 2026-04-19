@@ -277,7 +277,7 @@ export default function GastroGroupPage() {
           }}
         >
           <img
-            src="/pictures/mockups/03_gastrogroup-mockup.png"
+            src="/pictures/mockups/03_gastrogroup-mockup.avif"
             alt="Gastro Group Website Mockup"
             style={{
               width: '100%',

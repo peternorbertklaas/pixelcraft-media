@@ -116,7 +116,7 @@ const ADJACENT = [
     metric: '+380%',
     metricLabel: 'organischer Traffic',
     tags: ['E-Commerce', 'Webdesign'],
-    image: '/pictures/mockups/01_luxecommerce-mockup.png',
+    image: '/pictures/mockups/01_luxecommerce-mockup.avif',
   },
   {
     slug: 'financeone',
@@ -124,7 +124,7 @@ const ADJACENT = [
     metric: '7.8s → 1.1s',
     metricLabel: 'Ladezeit',
     tags: ['Fintech', 'Landing Page'],
-    image: '/pictures/mockups/04_financeone-mockup.png',
+    image: '/pictures/mockups/04_financeone-mockup.avif',
   },
 ]
 
@@ -297,7 +297,7 @@ export default function MedTechSolutionsPage() {
           }}
         >
           <img
-            src="/pictures/mockups/02_medtech-mockup.png"
+            src="/pictures/mockups/02_medtech-mockup.avif"
             alt="MedTech Solutions Website Mockup"
             style={{
               width: '100%',

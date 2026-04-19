@@ -335,7 +335,7 @@ export default function CoreWebVitalsPage() {
             }}
           >
             <Image
-              src="/pictures/blog/02_blog-performance-vortex.png"
+              src="/pictures/blog/02_blog-performance-vortex.avif"
               alt="Core Web Vitals 2025 — Performance Visualisierung"
               fill
               sizes="(max-width: 768px) 100%, 1400px"

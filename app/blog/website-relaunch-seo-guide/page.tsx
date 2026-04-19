@@ -322,7 +322,7 @@ export default function WebsiteRelaunchSeoGuidePage() {
             }}
           >
             <Image
-              src="/pictures/blog/04_blog-testimonial-quotes.png"
+              src="/pictures/blog/04_blog-testimonial-quotes.avif"
               alt="Website Relaunch ohne SEO-Risiko — Vollständiger Leitfaden"
               fill
               sizes="(max-width: 768px) 100%, 1400px"

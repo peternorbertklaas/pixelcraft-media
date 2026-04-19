@@ -303,7 +303,7 @@ export default function WebdesignTrends2026Page() {
             }}
           >
             <Image
-              src="/pictures/blog/01_blog-trends-2026.png"
+              src="/pictures/blog/01_blog-trends-2026.avif"
               alt="Webdesign Trends 2026 — Conversion-steigernde Designprinzipien"
               fill
               sizes="(max-width: 768px) 100%, 1400px"

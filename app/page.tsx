@@ -59,7 +59,7 @@ export const metadata: Metadata = {
       'Premium Webdesign Agentur. Wir bauen Websites, die Besucher in Kunden verwandeln — Ø +280% mehr Anfragen, kein einziges Template.',
     images: [
       {
-        url: '/pictures/hero/06_hero_brand-og-image.png',
+        url: '/pictures/hero/06_hero_brand-og-image.avif',
         width: 1200,
         height: 630,
         alt: 'PixelCraft Media — Webdesign Agentur',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: 'PixelCraft Media — Webdesign Agentur',
     description:
       'Premium Webdesign Agentur DE/AT/CH — Crafted to the Pixel. Ø +280% mehr Anfragen.',
-    images: ['/pictures/hero/06_hero_brand-og-image.png'],
+    images: ['/pictures/hero/06_hero_brand-og-image.avif'],
   },
   robots: {
     index: true,

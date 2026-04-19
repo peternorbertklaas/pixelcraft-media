@@ -185,7 +185,7 @@ const ADJACENT = [
     metric: '0.8% → 3.4%',
     metricLabel: 'Conversion Rate',
     tags: ['SaaS', 'UX/UI Design'],
-    image: '/pictures/mockups/02_medtech-mockup.png',
+    image: '/pictures/mockups/02_medtech-mockup.avif',
   },
   {
     slug: 'financeone',
@@ -193,7 +193,7 @@ const ADJACENT = [
     metric: '7.8s → 1.1s',
     metricLabel: 'Ladezeit',
     tags: ['Fintech', 'Landing Page'],
-    image: '/pictures/mockups/04_financeone-mockup.png',
+    image: '/pictures/mockups/04_financeone-mockup.avif',
   },
 ]
 
@@ -366,7 +366,7 @@ export default function LuxeCommercePage() {
           }}
         >
           <img
-            src="/pictures/mockups/01_luxecommerce-mockup.png"
+            src="/pictures/mockups/01_luxecommerce-mockup.avif"
             alt="LuxeCommerce Website Mockup"
             style={{
               width: '100%',
