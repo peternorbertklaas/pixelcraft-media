@@ -38,8 +38,8 @@ exports.handler = async (event) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'PixelCraft Media <onboarding@resend.dev>',
-      to: ['schroeder.peter@gmx.de'],
+      from: 'PixelCraft Media <noreply@pixelcraft-media.de>',
+      to: ['info@pixelcraft-media.de'],
       reply_to: email,
       subject: `Neue Anfrage: ${projectType || 'Webdesign'} — ${name}`,
       html,
